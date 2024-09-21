@@ -49,11 +49,11 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul a {
+nav a {
     padding: 1rem;
 }
 
-nav ul a:hover {
+nav a:hover {
     color: #000;
     background-color: #c6ce00;
 }
@@ -124,16 +124,18 @@ h3 {
 img {
     width: 100%;
     height: auto;
+    border: #c6ce00 solid 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-me img {
     min-width: 150px;
     max-height: 200px;
-    border: #333 solid 1px;
 }
 
 .country img {
-    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
 }
 
 .image-container {
