@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #333;
+    --secondary-color: #c6ce00;
+    --text-color1: #000;
+    --text-color2: #fff;
+    --detail-color1: #b2b2b2;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     display: grid;
@@ -18,14 +26,14 @@ header,
 nav,
 nav ul a,
 footer {
-    color: #fff;
+    color: var(--text-color2);
 }
 
 /* Section Header */
 
 header {
     grid-column: 1 / 4;
-    background-color: #333;
+    background-color: var(--primary-color);
     position: relative;
     height: 120px;
     display: flex;
@@ -40,7 +48,7 @@ nav {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #000;
+    background-color: var(--text-color1);
 }
 
 nav ul {
@@ -54,8 +62,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #000;
-    background-color: #c6ce00;
+    color: var(--text-color1);
+    background-color: var(--secondary-color);
 }
 
 a {
@@ -63,14 +71,14 @@ a {
 }
 
 header span {
-    color: #c6ce00;
+    color: var(--secondary-color);
 }
 
 /* Section Main */
 
 main,
 aside {
-    border: #b2b2b2 solid 1px;
+    border: var(--detail-color1) solid 1px;
     border-radius: 16px;
 }
 
@@ -106,8 +114,8 @@ aside ul {
 }
 
 h2 {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
     text-align: center;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -116,7 +124,7 @@ h2 {
 
 h3 {
     text-align: center;
-    border-bottom: #b2b2b2 solid 1px;
+    border-bottom: var(--detail-color1) solid 1px;
     width: 80%;
     margin: 0 auto;
 }
@@ -124,8 +132,9 @@ h3 {
 img {
     width: 100%;
     height: auto;
-    border: #c6ce00 solid 2px;
+    border: var(--secondary-color) solid 2px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 0.2rem;
 }
 
 .about-me img {
@@ -158,10 +167,10 @@ footer {
     grid-row: 3;
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: var(--primary-color);
 }
 
 #lastmodified {
-    color: #c6ce00;
+    color: var(--secondary-color);
     font-style: italic;
 }
