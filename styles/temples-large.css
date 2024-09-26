@@ -8,9 +8,18 @@
         display: none;
     }
 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #000;
+    }
+
     .nav {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-right: 1rem;
     }
 
 }
