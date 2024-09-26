@@ -1,0 +1,16 @@
+@media (min-width: 32rem) {
+    
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
