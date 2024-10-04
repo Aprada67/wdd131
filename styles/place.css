@@ -91,7 +91,3 @@ footer {
     color: var(--font-secondary-color);
     padding: 1rem;
 }
-
-#lastmodified {
-    color: var(--secondary-color);
-}
