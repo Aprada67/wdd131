@@ -69,8 +69,8 @@ h2 {
     display: none;
 }
 
-.nav:hover {
-    background-color: #000;
+.nav a:hover {
+    background-color: #666;
 }
 
 .navigation.open .nav {
