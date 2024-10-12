@@ -86,31 +86,50 @@ const temples = [
     }
 ];
 
-/*
-const container = document.getElementById("gallery");
+// Filter the temples
+createTempleCard(temples);
 
-temples.forEach(temple => {
-    const card = document.createElement("figure");
-    card.classList.add("temple-card");
+// Filter consts
+const home = document.querySelector("#home");
+const oldTemples = document.querySelector("#old");
+const newTemples = document.querySelector("#new");
+const largeTemples = document.querySelector("#large");
+const smallTemples = document.querySelector("#small");
 
-    card.innerHTML = `
-        <figcaption>
-            <h3>${temple.templeName}</h3>
-            <p><h4>Location:</h4> ${temple.location}</p>
-            <p><h4>Dedicated:</h4> ${temple.dedicated}</p>
-            <p><h4>Size:</h4> ${temple.area.toLocaleString()} sq. ft.</p>
-        </figcaption>
-        <img class="temple-image" src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-    `;
+// Filter event listeners
+home.addEventListener("click", () => {
+    createTempleCard(temples);
+});
 
-    container.appendChild(card);
-})
-*/
+oldTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year < 1900;
+    }));
+});
 
-createTempleCard();
+newTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year > 2000;
+    }));
+});
 
-function createTempleCard() {
-    temples.forEach(temple => {
+largeTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+smallTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+function createTempleCard(filteredTemples) {
+
+    const container = document.getElementById("gallery");
+    container.innerHTML = "";
+
+    // Iterates through the temples object and creates a temple card
+    filteredTemples.forEach(temple => {
         let card = document.createElement("figure");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -133,5 +152,5 @@ function createTempleCard() {
         card.appendChild(img);
 
         document.getElementById("gallery").appendChild(card);
-    })
+    });
 }
