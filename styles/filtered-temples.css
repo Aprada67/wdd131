@@ -69,6 +69,10 @@ h2 {
     display: none;
 }
 
+.nav:hover {
+    background-color: #000;
+}
+
 .navigation.open .nav {
     display: flex;
 }
