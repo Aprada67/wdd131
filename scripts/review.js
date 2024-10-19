@@ -8,17 +8,13 @@ function displayReviewDetails() {
     document.getElementById("review-text").textContent = text || "No review provided."
 
     // Review counter logic
-    let reviewCount = localStorage.getItem("review-count");
+    let reviewCount = parseInt(localStorage.getItem("review-count")) || 0;
 
-    if (reviewCount == null) {
-        reviewCount = 1;
-    } else {
-        reviewCount = parseInt(reviewCount) + 1;
-    }
+    reviewCount += 1;
 
     // Save the updated count
     localStorage.setItem("review-count", reviewCount);
-    document.getElementById("review-count").textContent = `You've submitted ${reviewCount} reviews.`;
+    document.getElementById("review-count").textContent = `Total reviews ${reviewCount}`;
 }
 
 document.addEventListener("DOMContentLoaded", displayReviewDetails);
