@@ -1,0 +1,65 @@
+.greetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+main {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+.thank-you-message p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.review-summary {
+    margin: 2rem 0;
+    color: #444;
+}
+
+.review-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.review-summary p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.review-counter {
+    margin: 2rem 0;
+}
+
+.review-counter p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.action-links {
+    margin-top: 2rem;
+}
+
+.action-links a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #2c2c2c;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
