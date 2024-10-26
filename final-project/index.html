@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Calisthenics page, know the importance of this sport and change your lifestyle from now">
+        <meta name="author" content="Alberto Jesús Prada Parmera">
+        <title>Calisthenics Final Project - WDD 131 - Dynamic Web Fundamentals - Alberto Jesús Prada</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/project.css">
+        <link rel="stylesheet" href="styles/project-large.css">
+        <script src="scripts/project.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/gallery.js" defer></script>
+    </head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div>
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Calisthenics logo" width="40px" height="40px">
+                    <span id="logo-name">| Alberto Prada</span>
+                </div>
+                <button type="button" id="hamb-menu" aria-label="Menu"></button>
+            </div>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <div class="hero-img">
+                <picture>
+                    <source srcset="images/hero.jpg" media="(min-width: 600px)">
+                    <img class="hero-img" src="images/hero-small.jpg" alt="Background Image">
+                </picture>
+            </div>
+            <div class="content">
+                <p>TODAY'S EFFORT IS TOMORROW'S SUCCESS</p>
+                <h1>Alberto Prada | Calisthenics</h1>
+                <div class="btn-container">
+                    <a class="btn">Learn more ></a>
+                    <a class="btn">FAQ's ></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore Section -->
+        <section id="explore">
+            <h2>Benefits and Importance</h2>
+            <div>
+                <h3>What is <span id="calisthenics-word">Calisthenics</span></h3>
+                <p>Calisthenics is a form of exercise that emphasizes using your 
+                    own body weight to build strength, flexibility, and endurance. 
+                    It involves movements like push-ups, pull-ups, and squats, 
+                    making it accessible to anyone and requiring minimal to no equipment.</p>
+                <h3>Importance</h3>
+                <p>Calisthenics is essential for overall fitness, promoting functional 
+                    strength and body control. It enhances muscle endurance, flexibility, 
+                    and coordination while reducing the risk of injury. Additionally, it 
+                    can be practiced anywhere, making it an accessible workout option for all.</p>
+            </div>
+            <figure class="portrait">
+                <img src="images/seneca.jpg" alt="Seneca" loading="lazy">
+                <figcaption>Difficulty is what awakens the power to act.</figcaption>
+                <figcaption>- Seneca</figcaption>
+            </figure>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section id="nutrition">
+            <h2>Nutrition</h2>
+            <p>Nutrition is essential for those practicing calisthenics, as it 
+                provides the energy needed for workouts and optimizes physical 
+                performance. A balanced diet rich in proteins, carbohydrates, 
+                and healthy fats promotes muscle recovery and growth. Additionally, 
+                proper hydration and nutrient intake are crucial for preventing 
+                injuries and maintaining overall health.</p>
+
+            <div class="horizontal-bar"></div>
+
+            <div class="gallery food">
+                <h3>Healthy recipe options that anyone can make</h3>
+                <figure class="carousel">
+                    <button class="btn nav-button" id="prev-btn">&#10094</button>
+                    <img src="" alt="" loading="lazy" id="food-image">
+                    <figcaption id="food-caption"></figcaption>
+                    <button class="btn nav-button" id="next-btn">&#10095</button>
+                </figure>
+            </div>
+        </section>
+
+        <!-- BMI Section -->
+        <section>
+            <h2>Know your BMI</h2>
+            <h3>Why is your BMI important?</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quibusdam delectus expedita voluptates at quaerat aut, 
+                ex impedit, magnam aliquid distinctio ipsa quis! Itaque 
+                accusantium quo, nisi odit optio nobis dolorem!</p>
+            <form id="bmi-form">
+                <label for="weight">Weight (kg) <span class="required">*</span></label>
+                <input type="number" id="weight" step="0.1" min="1" placeholder="Enter yout weight in kilograms" required>
+
+                <label for="height">Height (m) <span class="required">*</span></label>
+                <input type="number" id="height" step="0.01" min="0.5" placeholder="Enter your height in meters e.x., 1.80" required>
+
+                <button type="button" class="btn" id="calculate-btn">Calculate BMI</button>
+
+                <span id="result"></span>
+            </form>
+        </section>
+
+        <!-- Calisthenics Skills Section -->
+
+        <section id="skills-section">
+            <div class="sort">
+                <h2>Most Popular Skilss</h2>
+                <div class="sort-button">
+                    <label for="sort-select" class="visually-hidden">Sort by difficulty</label>
+                    <select id="sort-select" class="sort-select">
+                        <option value="high-to-low">High to Low</option>
+                        <option value="low-to-high">Low to High</option>
+                    </select>
+                </div>
+            </div>
+            <div id="gallery-skills">
+
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+
+        <section>
+            <h2>Join to the Crew</h2>
+
+            <table class="pricing-table">
+                <thead>
+                    <tr>Monthly Plans</tr>
+                    <tr class="plan-header">
+                        <th class="blank"></th>
+                        <th>Basic (9.99€)</th>
+                        <th>Premium (14.99€)</th>
+                        <th>Deluxe (29.99€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Access to basic routines</th>
+                        <td><span class="checkmark">✔️</span></td>
+                        <td><span class="checkmark">✔️</span></td>
+                        <td><span class="checkmark">✔️</span></td>
+                    </tr>
+                    <tr>
+                        <th>Access to telegram group</th>
+                        <td><span class="xmark">✖️</span></td>
+                        <td><span class="checkmark">✔️</span></td>
+                        <td><span class="checkmark">✔️</span></td>
+                    </tr>
+                    <tr>
+                        <th>2 video calls per month</th>
+                        <td><span class="xmark">✖️</span></td>
+                        <td><span class="xmark">✖️</span></td>
+                        <td><span class="checkmark">✔️</span></td>
+                    </tr>
+                    <tr>
+                        <th>Discounts in the web shop</th>
+                        <td><span class="xmark">✖️</span></td>
+                        <td><span class="xmark">✖️</span></td>
+                        <td><span class="checkmark">✔️</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="choose"><a href="#free">Choose Free</a></td>
+                        <td class="choose"><a href="#basic">Choose Basic</a></td>
+                        <td class="choose"><a href="#pro" >Choose Pro</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="img-row">
+            <img src="images/footer1.jpg" alt="Image 1" loading="lazy" width="250" height="250">
+            <img src="images/footer2.jpg" alt="Image 2" loading="lazy" width="250" height="250">
+            <img src="images/footer3.jpg" alt="Image 3" loading="lazy" width="250" height="250">
+            <img src="images/footer4.jpg" alt="Image 4" loading="lazy" width="250" height="250">
+            <img src="images/footer5.jpg" alt="Image 5" loading="lazy" width="250" height="250">
+        </div>
+        <div class="footer-grid">
+            <div class="support">
+                <h4>SUPPORT</h4>
+                <p>FAQS</p>
+                <p>MY ACCOUNT</p>
+                <p>CONTACT US</p>
+                <p>HELP CENTER</p>
+            </div>
+            <div class="information">
+                <h4>INFORMATION</h4>
+                <p>ABOUT US</p>
+                <p>TERMS & CONDITIONS</p>
+                <p>PRIVACY POLICY</p>
+                <p>REFUND POLICY</p>
+            </div>
+            <div class="subscribe">
+                <h4>SAVE 10% ON YOUR FIRST SUBSCRIPTION</h4>
+                <p>Receive an exclusive 10% voucher for your first order and always find out first about our brand new products & promotions in our newsletter.</p>
+                <div class="btn-footer-container">
+                    <input class="email-discount" type="email" placeholder="Your email address">
+                    <button type="button" class="footer-btn">Subscribe + save 10% now!</button>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-bar">
+
+        </div>
+        <div class="footer-bottom">
+            <p><span id="current-year"></span> ALBERTO PRADA - WDD 131 DYNAMIC WEB FUNDAMENTALS</p>
+            <span id="last-modified"></span>
+        </div>
+    </footer>      
+
+</body>
+</html>
