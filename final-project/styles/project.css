@@ -584,8 +584,20 @@ th {
 .btn-footer-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .footer-bottom {
     text-align: center;
+}
+
+#references {
+    color: var(--font-secondary-color);
+    background-color: var(--details-color);
+    transition: all 0.3s;
+    padding: .55rem 1rem;
+}
+
+#references:hover {
+    background-color: var(--accent-color);
 }

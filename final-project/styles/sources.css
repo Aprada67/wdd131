@@ -1,0 +1,25 @@
+main {
+    padding: 2rem 10%;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+ul li img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.grid {
+    margin: 0 auto;
+}
