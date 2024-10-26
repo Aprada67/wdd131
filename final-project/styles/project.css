@@ -20,6 +20,10 @@
     --font-weight-bold: 700;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", system-ui, sans-serif;
     background-color: var(--background-primary-color);
@@ -147,7 +151,9 @@ footer p {
 .navigation {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     padding: 1rem;
 }
@@ -162,18 +168,39 @@ footer p {
     font-size: 1.5rem;
 }
 
+/* Hamb Menu */
+
 .nav {
     list-style: none;
     display: none;
+    text-align: center;
 }
 
-/* Hamb Menu */
+ul li {
+    padding: .75rem;
+}
+
+ul a {
+    transition: all 0.3s;
+}
+
+ul a:hover {
+    color: var(--details-color);
+}
+
+.nav-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    color: #fff;
+}
 
 #hamb-menu {
     position: absolute;
     right: 1rem;
-    top: 45%;
-    transform: translateY(-50%);
+    top: 1.2rem;
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -189,6 +216,11 @@ footer p {
 
 #hamb-menu::before {
     content: "☰";
+}
+
+.navigation.open .nav {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Images */
@@ -540,6 +572,7 @@ th {
     border: 1px solid var(--font-secondary-color);
     background-color: var(--background-secondary-color);
     outline: none;
+    color: var(--font-secondary-color);
 }
 
 .footer-btn,

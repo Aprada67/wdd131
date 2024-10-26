@@ -13,3 +13,6 @@ Footer2: https://pin.it/5oKPditn8
 Footer3: https://pin.it/MhWa77hfE
 Footer4: https://pin.it/4Km3qyhjl
 Footer5: https://pin.it/1r7VDXTyn
+Footer6: https://pin.it/2DfGFe3tq
+Faqs-hero: https://pin.it/3Soj5gBRB
+Faqs-hero-small: https://i.pinimg.com/564x/ec/b2/aa/ecb2aaa8415c3c776592ad9e9e3a08ce.jpg

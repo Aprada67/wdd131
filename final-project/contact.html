@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for WDD 131 - Dynamic Web Fundamentals, get in touch with Alberto Jesús Prada.">
+    <meta name="author" content="Alberto Jesús Prada Parmera">
+    <title>Contact - WDD 131 - Dynamic Web Fundamentals - Alberto Jesús Prada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div>
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Calisthenics logo" width="40" height="40">
+                    <span id="logo-name">| Alberto Prada</span>
+                </div>
+                <button type="button" id="hamb-menu" aria-label="Menu"></button>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html#home">HOME</a></li>
+                <li><a href="index.html#explore">EXPLORE</a></li>
+                <li><a href="index.html#skills-section">POPULAR</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out!</p>
+            <form class="contact-form" id="contact-form" action="#" method="post">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message: <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="img-row">
+            <img src="images/footer1.jpg" alt="Image 1" loading="lazy" width="250" height="250">
+            <img src="images/footer2.jpg" alt="Image 2" loading="lazy" width="250" height="250">
+            <img src="images/footer3.jpg" alt="Image 3" loading="lazy" width="250" height="250">
+            <img src="images/footer4.jpg" alt="Image 4" loading="lazy" width="250" height="250">
+            <img src="images/footer5.jpg" alt="Image 5" loading="lazy" width="250" height="250">
+            <img src="images/footer6.jpg" alt="Image 6" loading="lazy" width="250" height="250">
+        </div>
+        <div class="footer-grid">
+            <div class="support">
+                <h4>SUPPORT</h4>
+                <p>FAQS</p>
+                <p>MY ACCOUNT</p>
+                <p>CONTACT US</p>
+                <p>HELP CENTER</p>
+            </div>
+            <div class="information">
+                <h4>INFORMATION</h4>
+                <p>ABOUT US</p>
+                <p>TERMS & CONDITIONS</p>
+                <p>PRIVACY POLICY</p>
+                <p>REFUND POLICY</p>
+            </div>
+            <div class="subscribe">
+                <h4>SAVE 10% ON YOUR FIRST SUBSCRIPTION</h4>
+                <p>Receive an exclusive 10% voucher for your first order and always find out first about our brand new products & promotions in our newsletter.</p>
+                <div class="btn-footer-container">
+                    <input class="email-discount" type="email" placeholder="Your email address">
+                    <button type="button" class="footer-btn">Subscribe + save 10% now!</button>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-bar"></div>
+        <div class="footer-bottom">
+            <p><span id="current-year"></span> ALBERTO PRADA - WDD 131 DYNAMIC WEB FUNDAMENTALS</p>
+            <span id="last-modified"></span>
+        </div>
+    </footer>
+</body>
+</html>

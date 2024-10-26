@@ -1,0 +1,121 @@
+@media (min-width: 768px) {
+
+    section {
+        padding: 4rem 20%;
+    }
+
+    .navigation {
+        padding: 1rem 2rem;
+        flex-direction: row;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 1rem;
+    }
+
+    /* Menu */
+    #hamb-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .navigation.open .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* Fonts */
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.15rem;
+    }
+
+    /* Hero */
+    #home {
+        height: 100vh;
+    }
+
+    #home p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #home .btn {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    /* Explore */
+    .importance-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Skills */
+    #gallery-skills {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .skill-card {
+        max-width: 350px;
+    }
+
+    /* Subscription */
+    .pricing-table {
+        width: 60%;
+        margin: 2rem auto;
+        font-size: 1rem;
+    }
+
+    .pricing-table th, .pricing-table td {
+        padding: 1.5rem;
+    }
+
+    .pricing-table th {
+        font-size: 1rem;
+    }
+
+    .pricing-table td {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "support information subscribe";
+    }
+
+    .img-row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: -2rem -2rem 2rem -2rem;
+    }
+
+    footer img {
+        min-width: 100%;
+    }
+}
